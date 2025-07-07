@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -e
-
 ## configure and install minimal xfce desktop environment
 
 ## check for sudo/root
@@ -13,8 +11,7 @@ fi
 cat ./xsessionrc >> /home/$SUDO_USER/.xsessionrc
 chown $SUDO_USER:$SUDO_USER /home/$SUDO_USER/.xsessionrc
 
-xfce4() {
-	sudo apt install -y \
+apt install -y \
 		libxfce4ui-utils \
 		thunar \
 		thunar-volman \
@@ -60,11 +57,7 @@ xfce4() {
 		papirus-icon-theme \
 		moka-icon-theme \
 		paper-icon-theme \
-		xsel
-}
-
-apps() {
-	sudo apt install -y \
+		xsel \
 		firefox-esr \
 		keepassxc \
 		libreoffice-gtk3 \
@@ -112,14 +105,7 @@ apps() {
 		xfburn \
 		yt-dlp \
 		zim \
-}
-
-if  $(uname) == 'Linux' ; then
-	if [ "$(/bin/grep ^ID= /etc/os-release)" = "ID=debian" ]; then
-		"$@" && echo
-	fi
-fi
-
+  
 echo 
 echo xfce install complete, please reboot and issue 'startx'
 echo
