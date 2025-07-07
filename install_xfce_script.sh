@@ -21,7 +21,7 @@ apt install -y \
 		xfce4-terminal \
 		xfce4-pulseaudio-plugin \
 		xfce4-panel \
-		xfce4-mixer \
+		# xfce4-mixer \
 		xfce4-whiskermenu-plugin \
 		xfce4-notifyd \
 		tumbler \
@@ -42,9 +42,9 @@ apt install -y \
 		xfce4-wavelan-plugin \
 		xfce4-weather-plugin \
 		mousepad \
-		libxfce4windowing \
-		libxfce4util \
-		libxfce4ui \
+		# libxfce4windowing \
+		# libxfce4util \
+		# libxfce4ui \
 		network-manager-gnome \
 		network-manager-openvpn \
 		network-manager-openvpn-gnome \
@@ -52,7 +52,7 @@ apt install -y \
 		adwaita-qt \
 		catfish \
 		qt5ct \
-		garcon \
+		# garcon \
 		gigolo \
 		papirus-icon-theme \
 		moka-icon-theme \
@@ -79,7 +79,7 @@ apt install -y \
 		mp3gain \
 		mp3splt \
 		mp3wrap \
-		msttcorefonts \
+		# msttcorefonts \
 		mumble \
 		ncdu \
 		nfs-common \
@@ -92,15 +92,15 @@ apt install -y \
 		ristretto \
 		sane-airscan \
 		speedtest-cli \
-		spotify-client \
-		steam \
+		# spotify-client \
+		# steam \
 		strawberry \
 		sudo \
 		syncthing \
-		thunderbird-esr \
+		thunderbird \
 		transmission \
 		wine \
-		winetricks \
+  		# winetricks
 		wireguard \
 		xfburn \
 		yt-dlp \
